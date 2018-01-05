@@ -18,9 +18,23 @@
                 );
                 }
             }
+
+            class Goodbye extends React.Component {
+                render() {
+                    return (
+                        <div>
+                            <h2>Goodbye</h2>
+                        </div>
+                    );
+                }
+            }
         
             ReactDOM.render(
-                <Greeting />, document.getElementById('app')
+                <div>
+                    <Greeting />
+                    <Goodbye />
+                </div>,
+                document.getElementById('app')
             );
         </script>
     </body>
